@@ -1,6 +1,6 @@
 # SQL Next Steps: Optimization
 
-Resources for Oreill'y Online Live Training [SQL Next Steps: Optimizations](https://learning.oreilly.com/live-training/courses/sql-next-steps-optimization/0636920378372/).
+Resources for Oreill'y Online Live Training [SQL Next Steps: Optimizations](https://www.oreilly.com/live-training/courses/sql-next-steps-optimization/0636920452904/).
 
 - [DBFiddle](https://www.db-fiddle.com/f/nJ58ZozUZ9cxsZck4QqQCp/1)
 - [12 Common Mistakes and Missed Optimization Opportunities in SQL](https://hakibenita.com/sql-dos-and-donts)
