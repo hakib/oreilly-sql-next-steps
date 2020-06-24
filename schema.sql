@@ -1,3 +1,4 @@
+SET time zone UTC;
 SET datestyle TO ymd;
 
 DROP TABLE IF EXISTS sale;
@@ -36,16 +37,16 @@ INSERT INTO sale (
 -- Generate Some Data
 -- INSERT INTO sale (id, branch, sold_at, customer, product, price, discount)
 -- SELECT
---     (SELECT MAX(id) FROM sale) + generate_series(1, 10000) as id,
---     (ARRAY['NY', 'LA'])[ceil(random() * 2)] AS branch,
---     '2020-03-01 00:00:00 UTC'::timestamptz + interval '1 hour' * random() * 24 * 30 * 6 AS sold_at,
---     (ARRAY['Bill', 'David', 'John', 'Lily'])[ceil(random() * 30)] AS customer,
---     (ARRAY['Shoes', 'Shirt', 'Pants', 'Hat', 'Give Away'])[ceil(random() * 4)] AS product,
---     round(random() * 150 * 100)::integer / 10 * 10 as price,
---     0 as discount;
-
+--    (SELECT MAX(id) FROM sale) + generate_series(1, 9985) as id,
+--    (ARRAY['NY', 'LA'])[ceil(random() * 2)] AS branch,
+--    '2020-03-01 00:00:00 UTC'::timestamptz + interval '1 hour' * random() * 24 * 30 * 6 AS sold_at,
+--    (ARRAY['Bill', 'David', 'John', 'Lily'])[ceil(random() * 30)] AS customer,
+--    (ARRAY['Shoes', 'Shirt', 'Pants', 'Hat', 'Give Away'])[ceil(random() * 4)] AS product,
+--    round(random() * 150 * 100)::integer / 10 * 10 as price,
+--    0 as discount;
 -- ANALYZE sale;
 
 -- Create some indexes
 -- CREATE INDEX sale_customer_ix ON sale(customer);
 -- CREATE INDEX sale_sold_at_ix ON sale(sold_at);
+-- CREATE INDEX sale_product_ix ON sale(product);
