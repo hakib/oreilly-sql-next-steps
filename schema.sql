@@ -37,7 +37,7 @@ INSERT INTO sale (
 -- Generate Some Data
 -- INSERT INTO sale (id, branch, sold_at, customer, product, price, discount)
 -- SELECT
---    (SELECT MAX(id) FROM sale) + generate_series(1, 9985) as id,
+--    (SELECT MAX(id) FROM sale) + generate_series(1, 99985) as id,
 --    (ARRAY['NY', 'LA'])[ceil(random() * 2)] AS branch,
 --    '2020-03-01 00:00:00 UTC'::timestamptz + interval '1 hour' * random() * 24 * 30 * 6 AS sold_at,
 --    (ARRAY['Bill', 'David', 'John', 'Lily'])[ceil(random() * 30)] AS customer,
